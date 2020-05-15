@@ -1,0 +1,109 @@
+.pics {
+  border-radius: 50%;
+  width: 200px;
+  display: block;
+  margin: 60px auto 30px auto;
+}
+
+.textcontainer {
+  width: 60%;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #1612ff88;
+  padding: 20px 20px;
+  margin: 50px auto;
+}
+
+table, ul {
+  font-size: medium;
+  font-family: 'Lato', sans-serif;
+}
+
+.insta, .whatsapp, .github {
+  font-size: 50px;
+  margin: 4px;
+}
+
+.insta {
+  color: rgba(247, 17, 247, 0.986);
+}
+
+.whatsapp {
+  color: #4cdd09;
+}
+
+.navbar-nav li.active {
+  background-color: #e73111;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  border-bottom: 1px solid  grey;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ul {
+  margin: 5px;
+}
+
+.myblogcolumn {
+  min-height: 150px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #1612ff88;
+}
+
+#bg {
+  /* The image used */
+  background-image: "contact.jpg";
+  text-align: center;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #bg {
+    display: block;
+  }
+  #resizebox {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #bg {
+    display: none;
+  }
+  #resizebox {
+    display: block;
+  }
+}
+
+.block {
+  display: block;
+  margin: 40px;
+}
