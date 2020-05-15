@@ -1,0 +1,168 @@
+$bordercolor :  #1612ff88;
+$columnwidth : 30%;
+$borderwidth : 2px;
+$borderstyle : solid;
+$writablegrey:  #f2f2f2;
+
+.pics {
+    border-radius: 50%;
+    width: 200px;
+    display:block;
+    margin: 60px auto 30px auto;
+  }
+  
+  
+  .textcontainer
+  {
+    width: 60%;
+    text-align: center;
+    border-radius: 20px;
+    border: $borderwidth $borderstyle $bordercolor;
+    padding: 20px 20px;
+    margin: 50px auto;
+  }
+ 
+  
+  %text
+  {
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+%icon
+{
+    font-size:50px;
+    margin:4px;
+}
+
+.insta
+{
+    @extend %icon;
+    color: rgba(247, 17, 247, 0.986);
+}
+
+.whatsapp
+{
+    @extend %icon;
+    color: rgb(76, 221, 9)
+}
+
+.github
+{
+    @extend %icon;
+}
+
+.navbar-nav
+{
+    li.active
+    {
+    background-color: rgb(231, 49, 17);
+    }
+}
+
+footer
+{
+  text-align: center;
+  background-color: black;
+  color : white;
+}
+
+h1
+{
+border-bottom:1px solid  grey ;
+}
+
+
+table
+{
+  @extend %text;
+  width: 100%;
+  border-collapse: collapse;
+  th,td
+  {
+    padding :10px;
+    text-align :center;
+  }
+}
+
+tr:nth-child(even)
+{
+    background-color: $writablegrey;
+}
+
+ul
+{
+    @extend %text;
+    margin : 5px;
+}
+
+%flexcolumn
+{
+  min-height: 150px;
+  background-color: $writablegrey;
+  border-radius: 20px;
+  padding: 20px;
+  margin : 10px;
+  border: $borderwidth $borderstyle $bordercolor;
+}
+
+.myblogcolumn
+{
+    @extend %flexcolumn;
+}
+
+
+
+#bg {
+    /* The image used */
+    background-image:url("project0/contact.jpg");
+  
+    text-align: center;
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+  @media(min-width : 600px)
+  {
+     
+         #bg {
+         display:block;
+         
+     }
+     #resizebox {
+        display:none;
+        
+    }
+  }
+  @media(max-width: 600px) {
+    
+        #bg {
+        display:none;
+    }
+    #resizebox {
+        display:block;
+        
+    }
+  }
+
+  .block
+  {
+    display:block;
+    margin :40px;
+  }
+
+
+
+
+
+
+
