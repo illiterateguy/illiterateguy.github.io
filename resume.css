@@ -75,7 +75,7 @@ ul {
 
 #bg {
   /* The image used */
-  background-image: "contact.jpg";
+  background-image: url("contact.jpg");
   text-align: center;
   /* Full height */
   height: 100%;
